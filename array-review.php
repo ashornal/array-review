@@ -16,6 +16,7 @@ function printAnimals($animals)
     {
         echo $animals[$i] . " ";
     }
+
 }
 
 
@@ -44,3 +45,11 @@ $flavors = array(
     "lemon"=>"Lemon Drop",
     "tiramisu"=>"Tiramisu",
 );
+
+echo nl2br ("\n\n\n");
+
+foreach ($flavors as $flavor => $name)
+{
+
+    echo "<input type=\"checkbox\" name=\"flavors[]\" value=\"$flavor\"> $name<br>";
+}
